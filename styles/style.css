@@ -3,7 +3,9 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+.flexContainer{
+     margin-bottom: 30px;
+}
 header {
     align-items: center;
     background-color: #636057;
@@ -17,12 +19,6 @@ header img {
 margin-left: 10%;
 }
 
-main {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-}
 
 nav {
     flex: 1;
@@ -32,22 +28,65 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
- }
+}
 
 nav li {
     display: flex;
     flex-direction: row;
 }
 
-.bannerImages {
-    flex-direction: row;
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
 }
 
-.featuredSection {
+.bannerImages {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flexContainer.featuredSection {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 100%;
+}
+
+.flexContainer.featuredSection img {
+    align-self:flex-start;
+}
+
+.flexContainer.featuredSection div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.flexContainer.featuredSection h2 {
+    font-size: 15pt;
+    text-align: center;
+}
+
+.scroll {
+    overflow: auto;
+    text-overflow: ellipsis; 
+
+}
+
+article {
+}
+
+button {
+    align-self: flex-start;
 }
 
 footer {
+    background-color: #636057;
     height: 100px;
     width: 100%;
 }
